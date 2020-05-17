@@ -1,0 +1,14 @@
+.BMIForm {
+  &__button{
+    height: 40px;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+  }
+  .disabled {
+    background-color: gray;
+    opacity: 0.5;
+  }
+}
