@@ -16,10 +16,10 @@ const BMIForm = () => {
     setHeight(value);
   };
 
-  const clearInput = () => {
-    setWeight('');
-    setHeight('');
-  };
+  // const clearInput = () => {
+  //   setWeight('');
+  //   setHeight('');
+  // };
 
 
   const onSubmit = (e) => {

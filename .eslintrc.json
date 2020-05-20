@@ -1,11 +1,13 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "testing-library": true
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "plugin:testing-library/react"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -19,7 +21,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "testing-library"
     ],
     "settings": {
         "import/resolver": {
