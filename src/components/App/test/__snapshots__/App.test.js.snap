@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <h1
+      class="header"
+    >
+      Personal Body Mass Index
+    </h1>
+    <form
+      class="BMIForm"
+    >
+      <div
+        class="Input"
+      >
+        <label
+          class="Input__label"
+          for="Weight (kg)"
+        >
+          Weight (kg)
+        </label>
+        <input
+          class="Input__input"
+          id="Weight (kg)"
+          placeholder="60"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        class="Input"
+      >
+        <label
+          class="Input__label"
+          for="Height (cm)"
+        >
+          Height (cm)
+        </label>
+        <input
+          class="Input__input"
+          id="Height (cm)"
+          placeholder="180"
+          type="number"
+          value=""
+        />
+      </div>
+      <button
+        class="BMIForm__button disabled"
+        disabled=""
+        type="submit"
+      >
+        Calculate
+      </button>
+    </form>
+  </div>
+</div>
+`;

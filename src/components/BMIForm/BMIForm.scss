@@ -1,3 +1,4 @@
+@import 'styles/main.scss';
 .BMIForm {
   &__button{
     height: 40px;
@@ -5,10 +6,10 @@
     border-radius: 4px;
     font-size: 20px;
     background-color: blue;
-    color: white;
   }
   .disabled {
     background-color: gray;
     opacity: 0.5;
+    color: white;
   }
 }

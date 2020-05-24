@@ -1,0 +1,39 @@
+.white-text {
+  color: white;
+}
+
+.underweight {
+  color: #21a6f3;
+}
+
+.normal {
+  color: #41bc63;
+}
+
+.overweight {
+  color: #f2a007;
+}
+
+.obesity {
+  color: #fc5348;
+}
+
+.button {
+  height: 40px;
+  outline: none;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.button-disabled {
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.button-primary {
+  background-color: #689f38;
+}
+
+.button-secondary {
+  background-color: #fc5348;;
+}
