@@ -12,19 +12,19 @@ const CurrentResult = ({
 }) => {
   return (
     <div className="CurrentResult">
-      <div className="CurrentResult__Card CurrentResult__Wide">
+      <div className="card CurrentResult__Wide">
         <div className="CurrentResult__ResultContainer">
           <span>Weight: {weight} kg</span>
           <span>Height: {height} cm</span>
           <span>Date: {date}</span>
         </div>
-        <h2 className={`CurrentResult__Color ${BMIToString(bmi)}`}>BMI: {BMIToString(bmi)}</h2>
+        <h2 className={`CurrentResult__Color ${BMIToString(bmi)}`}>BMI: {`${bmi} - ${BMIToString(bmi)}`}</h2>
         <div className="CurrentResult__Buttons">
           <button onClick={onSave} className="button button-primary">Save</button>
           <button onClick={onReset} className="button button-secondary">Reset</button>
         </div>
       </div>
-      <div className="CurrentResult__Card CurrentResult__Narrow">
+      <div className="card CurrentResult__Narrow">
         <h2>BMI Categories</h2>
         <ul>
           <li className="underweight">

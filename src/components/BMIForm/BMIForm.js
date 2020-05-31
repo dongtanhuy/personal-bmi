@@ -1,21 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { calculateBMI } from 'services/bmiCalculationService';
-import { getData, storeData } from 'services/localStorageService';
 import { v4 as uuidv4 } from 'uuid';
 import Input from '../Input';
 import CurrentResult from '../CurrentResult';
 import './BMIForm.scss';
 
-const BMIForm = () => {
-  const initState = () => getData('data') || []
+const BMIForm = ({ onSaveData }) => {
   const [weight, setWeight] = useState('');
   const [height, setHeight] = useState('');
   const [bmi, setBMI] = useState('');
-  const [state, setState] = useState(initState);
   const [isShownResult, setIsShownResult] = useState(false);
-  useEffect(() => {
-    storeData('data', state)
-  },[state])
 
   const onChangeWeight = (value) => {
     setWeight(value);
@@ -44,8 +38,7 @@ const BMIForm = () => {
       bmi,
       date,
     }
-    setState([...state, newValue])
-    // storeData('data',state);
+    onSaveData(newValue)
     clearInput();
     setIsShownResult(false);
   }
