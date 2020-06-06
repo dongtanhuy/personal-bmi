@@ -3,6 +3,7 @@ import { getData, storeData } from 'services/localStorageService';
 import Header from '../Header';
 import BMIForm from '../BMIForm';
 import History from '../History';
+import Chart from '../Chart';
 import './App.scss';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Header />
       <BMIForm onSaveData={onSaveData} />
       <History data={state} />
+      <Chart data={state} />
     </div>
   );
 }
