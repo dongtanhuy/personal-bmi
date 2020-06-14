@@ -5,7 +5,7 @@ exports[`renders App 1`] = `
   <h1
     class="header"
   >
-    Personal Body Mass Index
+    Personal Body Mass Index Calculator
   </h1>
 </div>
 `;
