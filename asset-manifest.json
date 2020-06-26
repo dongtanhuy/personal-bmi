@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/personal-bmi/static/css/main.38e7d22b.chunk.css",
+    "main.js": "/personal-bmi/static/js/main.f7e396f9.chunk.js",
+    "main.js.map": "/personal-bmi/static/js/main.f7e396f9.chunk.js.map",
+    "runtime-main.js": "/personal-bmi/static/js/runtime-main.14dd7ce2.js",
+    "runtime-main.js.map": "/personal-bmi/static/js/runtime-main.14dd7ce2.js.map",
+    "static/js/2.8e29a79e.chunk.js": "/personal-bmi/static/js/2.8e29a79e.chunk.js",
+    "static/js/2.8e29a79e.chunk.js.map": "/personal-bmi/static/js/2.8e29a79e.chunk.js.map",
+    "index.html": "/personal-bmi/index.html",
+    "precache-manifest.95f2368a1a09b9194fdc8be7264754ec.js": "/personal-bmi/precache-manifest.95f2368a1a09b9194fdc8be7264754ec.js",
+    "service-worker.js": "/personal-bmi/service-worker.js",
+    "static/css/main.38e7d22b.chunk.css.map": "/personal-bmi/static/css/main.38e7d22b.chunk.css.map",
+    "static/js/2.8e29a79e.chunk.js.LICENSE.txt": "/personal-bmi/static/js/2.8e29a79e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.14dd7ce2.js",
+    "static/js/2.8e29a79e.chunk.js",
+    "static/css/main.38e7d22b.chunk.css",
+    "static/js/main.f7e396f9.chunk.js"
+  ]
+}
