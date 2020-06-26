@@ -1,17 +1,18 @@
 version: 2.1
-orbs:
-  node: circleci/node@1.1.6
+defaults: &defaults
+  docker:
+    - image: circleci/node:12
 jobs:
-  build-and-test:
-    executor:
-      name: node/default
+  run-unit-test:
+    <<: *defaults
     steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm test
+      - run:
+          name: Install modules
+          command: yarn
+      - run:
+          name: Run unit test
+          command: yarn test
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+  workflow:
+    jobs:
+      - run-unit-test
